@@ -1,0 +1,6 @@
+services:
+- type: web
+  name: showcase-test
+  env: java
+  buildCommand: ./mvnw clean package
+  startCommand: java -jar target/showcase-0.0.1-SNAPSHOT.jar
