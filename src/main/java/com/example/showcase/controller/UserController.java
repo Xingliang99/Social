@@ -13,4 +13,10 @@ public class UserController {
         System.out.println(user.name + user.password);
         return "";
     }
+
+    @GetMapping("/id")
+    public String Post()
+    {
+        return "user post";
+    }
 }
