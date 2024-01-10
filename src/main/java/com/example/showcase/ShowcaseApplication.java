@@ -8,6 +8,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 @SpringBootApplication
 @RestController
+//@MapperScan()
 public class ShowcaseApplication {
 
 	public static void main(String[] args) {
