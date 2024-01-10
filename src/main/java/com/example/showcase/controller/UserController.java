@@ -14,9 +14,15 @@ public class UserController {
         return "";
     }
 
-    @GetMapping("/id")
-    public String Post()
+    @GetMapping("/{id}")
+    public String GetUserInfo(@PathVariable int userId)
     {
         return "user post";
+    }
+
+    @GetMapping("/{id}/{postId}")
+    public String GetPost()
+    {
+        return "";
     }
 }
