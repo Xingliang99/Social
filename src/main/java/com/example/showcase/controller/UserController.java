@@ -24,7 +24,9 @@ public class UserController {
     @GetMapping("/all")
     public List<User> FindAll()
     {
-        return userMapper.findAll();
+        List<User> all = userMapper.findAll();
+        System.out.println(all);
+        return all;
     }
 
     @GetMapping("/{id}")
