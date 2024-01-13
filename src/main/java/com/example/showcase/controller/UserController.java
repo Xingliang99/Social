@@ -17,7 +17,7 @@ public class UserController {
 
     @PostMapping("register")
     public String Register(@RequestBody User user){
-        System.out.println(user.name + user.password);
+        System.out.println(user.Username + user.PasswordHash);
         return "";
     }
 
